@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4ff00",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#f3f4f6",
+                        "surface": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>支持 | Env Manage Tool</title>
+</head>
+
+<body class="bg-[#f3f4f6] font-display text-slate-900 antialiased">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <!-- Top Navigation -->
+        <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white px-6 md:px-20 py-3">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-slate-900 size-8">
+                        <img src="EnvManageTool.png" />
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight">Env Manage Tool</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                </div>
+            </div>
+        </header>
+        <main class="max-w-7xl mx-auto w-full px-6 md:px-20 py-10 flex flex-col lg:flex-row gap-12">
+            <!-- Main Content Area -->
+            <article class="flex flex-col gap-12 w-full">
+                <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
+                    <header class="border-b border-slate-100 pb-8 mb-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="p-3 bg-slate-100 rounded-xl text-slate-900">
+                                <span class="material-symbols-outlined text-2xl">support_agent</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h1 class="text-3xl font-black tracking-tight text-slate-900">支持</h1>
+                                </div>
+                                <p class="text-sm text-slate-500 mt-1">帮助您快速上手</p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="space-y-12">
+
+                        <!-- App Overview -->
+                        <section class="scroll-mt-32" id="overview">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                应用简介</h2>
+                            <div class="prose max-w-none text-slate-600 leading-relaxed space-y-4">
+                                <p>
+                                    Env Manage Tool 是一款专业的服务器环境配置管理工具，支持 iOS 和 macOS 双平台。它帮助开发者、运维工程师和系统管理员安全地存储和管理服务器 SSH 凭据、Web 管理后台登录信息以及 SSL 证书文件。
+                                </p>
+                                <p>
+                                    所有敏感数据均使用 AES-256-GCM 加密，并通过 Face ID / Touch ID 保护访问。您的数据通过 iCloud 在所有 Apple 设备间无缝同步。
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Key Features -->
+                        <section class="scroll-mt-32" id="features">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                核心功能</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">encrypted</span>
+                                        <p class="font-bold text-sm text-slate-900">AES-256-GCM 加密</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">所有密码和敏感凭据在存储前均在本地加密处理。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">fingerprint</span>
+                                        <p class="font-bold text-sm text-slate-900">生物识别认证</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">支持 Face ID 或 Touch ID 解锁，可配置自动锁定时间以增强安全性。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">cloud_sync</span>
+                                        <p class="font-bold text-sm text-slate-900">iCloud 同步</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">环境配置和设置通过 CloudKit 在所有 Apple 设备间自动同步。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">folder_managed</span>
+                                        <p class="font-bold text-sm text-slate-900">按客户分组管理</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">按客户或项目分组管理环境配置，支持生产、测试、开发三种环境类型。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">content_copy</span>
+                                        <p class="font-bold text-sm text-slate-900">一键复制</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">轻点即可复制主机地址、用户名或密码。macOS 上还支持顺序复制模式，工作流程更高效。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">import_export</span>
+                                        <p class="font-bold text-sm text-slate-900">导入与导出</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">支持将环境配置导出为 JSON 文件进行备份或分享，也可从 JSON 文件导入配置。</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- System Requirements -->
+                        <section class="scroll-mt-32" id="requirements">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                系统要求</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-lg text-slate-700">phone_iphone</span>
+                                    <div>
+                                        <p class="font-bold text-sm text-slate-900">iOS</p>
+                                        <p class="text-sm text-slate-500">需要 iOS 18.0 或更高版本，免费使用。</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-lg text-slate-700">laptop_mac</span>
+                                    <div>
+                                        <p class="font-bold text-sm text-slate-900">macOS</p>
+                                        <p class="text-sm text-slate-500">需要 macOS 15.0 或更高版本，需年度订阅。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- FAQ -->
+                        <section class="scroll-mt-32" id="faq">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                常见问题</h2>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">我的数据如何被保护？</p>
+                                    <p class="text-sm text-slate-500">所有敏感数据（密码、Web 凭据）在存储前均使用 AES-256-GCM 加密。应用通过生物识别认证（Face ID / Touch ID）或主密码保护访问。应用未集成任何第三方 SDK 或分析工具。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">iCloud 同步如何工作？</p>
+                                    <p class="text-sm text-slate-500">您的环境数据通过 Apple CloudKit 自动同步。所有数据存储在您的私有 iCloud 容器中，开发者无法访问您的数据。只要有网络连接，同步就会在后台自动进行。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">什么是顺序复制模式（macOS）？</p>
+                                    <p class="text-sm text-slate-500">顺序复制是 macOS 独有的功能，通过键盘快捷键自动按顺序复制主机地址、用户名和密码。使用此功能需要在系统设置中授予辅助功能权限。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">iOS 版本是免费的吗？</p>
+                                    <p class="text-sm text-slate-500">是的，iOS 版本完全免费，所有功能均已解锁。macOS 版本需要年度订阅，提供 7 天免费试用。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">可以导出我的数据吗？</p>
+                                    <p class="text-sm text-slate-500">可以。您可以将全部或选定的环境配置导出为 JSON 文件，用于备份或分享。您也可以将 JSON 配置文件导入到应用中。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">可以存储哪些类型的信息？</p>
+                                    <p class="text-sm text-slate-500">每个环境条目支持：服务器 SSH 详情（主机、端口、用户名、密码、路径）、Web 管理后台凭据（访问地址、用户名、密码）、SSL 证书文件附件、环境类型（生产 / 测试 / 开发）以及备注。</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Contact -->
+                        <section class="scroll-mt-32 mb-8" id="contact">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                联系我们</h2>
+                            <div class="bg-slate-900 rounded-xl p-8 text-white">
+                                <div class="flex flex-col md:flex-row gap-8 items-center justify-between">
+                                    <div class="space-y-4 max-w-md text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">需要帮助？</h3>
+                                        <p class="text-slate-400 text-sm">如果您有任何问题、反馈或功能建议，请通过邮件联系我。</p>
+                                    </div>
+                                    <div class="flex flex-col gap-3 w-full md:w-auto">
+                                        <button
+                                            class="bg-primary hover:opacity-90 text-black font-bold py-3 px-8 rounded-lg transition-all flex items-center justify-center gap-2">
+                                            <span class="material-symbols-outlined text-[20px]">send</span>
+                                            <a class="text-sm font-bold text-slate-900 hover:text-primary transition-colors underline decoration-primary decoration-2 underline-offset-4"
+                                                href="mailto:1@dengcj.com">1@dengcj.com</a>
+                                    </div>
+                                    </button>
+                                    <p class="text-center text-[10px] text-slate-500 uppercase tracking-widest">通常会在 12 小时内回复</p>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- Footer -->
+        <footer class="mt-auto border-t border-slate-200 bg-white py-10 px-6 md:px-20">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2 opacity-60">
+                    <div class="text-slate-900 size-5">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 uppercase tracking-widest">&copy; 2026 Deng Chunjie.</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="text-xs font-bold text-slate-400 hover:text-slate-900 transition-colors uppercase tracking-widest"
+                        href="privacy_zh.html">隐私政策</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
