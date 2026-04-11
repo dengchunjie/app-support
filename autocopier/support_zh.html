@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4ff00",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#f3f4f6",
+                        "surface": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>支持 | AutoCopier</title>
+</head>
+
+<body class="bg-[#f3f4f6] font-display text-slate-900 antialiased">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <!-- Top Navigation -->
+        <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white px-6 md:px-20 py-3">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-slate-900 size-8">
+                        <img src="AutoCopier.png" />
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight">AutoCopier</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                </div>
+            </div>
+        </header>
+        <main class="max-w-7xl mx-auto w-full px-6 md:px-20 py-10 flex flex-col lg:flex-row gap-12">
+            <!-- Main Content Area -->
+            <article class="flex flex-col gap-12 w-full">
+                <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
+                    <header class="border-b border-slate-100 pb-8 mb-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="p-3 bg-slate-100 rounded-xl text-slate-900">
+                                <span class="material-symbols-outlined text-2xl">support_agent</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h1 class="text-3xl font-black tracking-tight text-slate-900">支持</h1>
+                                </div>
+                                <p class="text-sm text-slate-500 mt-1">帮助您快速上手</p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="space-y-12">
+
+                        <!-- App Overview -->
+                        <section class="scroll-mt-32" id="overview">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                应用简介</h2>
+                            <div class="prose max-w-none text-slate-600 leading-relaxed space-y-4">
+                                <p>
+                                    AutoCopier 是一款 macOS 代码片段管理工具，拥有独特的自动逐行复制功能。它帮助开发者和高效用户保存、整理并快速粘贴多行代码片段。只需反复按下 Cmd+V，AutoCopier 会自动将下一行内容加载到剪贴板。
+                                </p>
+                                <p>
+                                    所有数据均存储在本地 Mac 上，无云端、无账户、无追踪。
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Key Features -->
+                        <section class="scroll-mt-32" id="features">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                核心功能</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">content_paste_go</span>
+                                        <p class="font-bold text-sm text-slate-900">自动逐行复制</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">按下 Cmd+V 后自动推进到下一行，无需手动逐行复制。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">data_object</span>
+                                        <p class="font-bold text-sm text-slate-900">代码片段管理</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">创建、编辑和整理代码片段，支持标题、颜色标签和收藏功能。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">code</span>
+                                        <p class="font-bold text-sm text-slate-900">带行号的代码编辑器</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">内置代码编辑器，显示行号，提供清晰的编辑体验。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">palette</span>
+                                        <p class="font-bold text-sm text-slate-900">颜色标签</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">使用 8 种颜色选项组织片段，一目了然地区分不同类别。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">search</span>
+                                        <p class="font-bold text-sm text-slate-900">全文搜索</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">按标题或内容搜索片段，支持实时过滤。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">lock</span>
+                                        <p class="font-bold text-sm text-slate-900">完全离线</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">所有数据存储在本地 Mac 上，无云端、无网络请求、无第三方 SDK。</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- How Auto Copy Works -->
+                        <section class="scroll-mt-32" id="how-it-works">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                自动复制工作流程</h2>
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">1</span>
+                                    <p class="text-sm text-slate-600">打开一个代码片段，点击 <strong>"Auto Copy By Line"</strong> 按钮</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">2</span>
+                                    <p class="text-sm text-slate-600">第一行内容自动复制到剪贴板</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">3</span>
+                                    <p class="text-sm text-slate-600">切换到目标应用，按下 <strong>Cmd+V</strong> 粘贴</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">4</span>
+                                    <p class="text-sm text-slate-600">AutoCopier 检测到粘贴操作后，自动将下一行加载到剪贴板</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">5</span>
+                                    <p class="text-sm text-slate-600">重复按 Cmd+V 直到所有行粘贴完毕，编辑器会自动关闭</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- System Requirements -->
+                        <section class="scroll-mt-32" id="requirements">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                系统要求</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-lg text-slate-700">laptop_mac</span>
+                                    <div>
+                                        <p class="font-bold text-sm text-slate-900">macOS</p>
+                                        <p class="text-sm text-slate-500">需要 macOS 26.0 或更高版本，免费使用。</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-lg text-slate-700">accessibility_new</span>
+                                    <div>
+                                        <p class="font-bold text-sm text-slate-900">辅助功能权限</p>
+                                        <p class="text-sm text-slate-500">用于检测系统级 Cmd+V 操作。请在系统设置 > 隐私与安全性 > 辅助功能中授权。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- FAQ -->
+                        <section class="scroll-mt-32" id="faq">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                常见问题</h2>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">为什么 AutoCopier 需要辅助功能权限？</p>
+                                    <p class="text-sm text-slate-500">AutoCopier 需要在系统级别监听 Cmd+V 键盘快捷键来检测粘贴操作，从而自动将下一行内容加载到剪贴板。此权限仅用于此目的，不会记录或传输任何键盘输入。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">我的数据存储在哪里？</p>
+                                    <p class="text-sm text-slate-500">所有代码片段存储在 ~/Library/Application Support/AutoCopy/snippets.json。不会向任何服务器或云服务发送数据。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">AutoCopier 是免费的吗？</p>
+                                    <p class="text-sm text-slate-500">是的，AutoCopier 完全免费，所有功能均可使用。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">可以备份我的代码片段吗？</p>
+                                    <p class="text-sm text-slate-500">可以。您的代码片段以标准 JSON 文件存储，可以直接备份或转移 ~/Library/Application Support/AutoCopy/snippets.json 文件。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">自动复制功能无法使用？</p>
+                                    <p class="text-sm text-slate-500">请确认已授予辅助功能权限。前往系统设置 > 隐私与安全性 > 辅助功能，确保 AutoCopier 已启用。授权后可能需要重新启动应用。</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Contact -->
+                        <section class="scroll-mt-32 mb-8" id="contact">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                联系我们</h2>
+                            <div class="bg-slate-900 rounded-xl p-8 text-white">
+                                <div class="flex flex-col md:flex-row gap-8 items-center justify-between">
+                                    <div class="space-y-4 max-w-md text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">需要帮助？</h3>
+                                        <p class="text-slate-400 text-sm">如果您有任何问题、反馈或功能建议，请通过邮件联系我。</p>
+                                    </div>
+                                    <div class="flex flex-col gap-3 w-full md:w-auto">
+                                        <button
+                                            class="bg-primary hover:opacity-90 text-black font-bold py-3 px-8 rounded-lg transition-all flex items-center justify-center gap-2">
+                                            <span class="material-symbols-outlined text-[20px]">send</span>
+                                            <a class="text-sm font-bold text-slate-900 hover:text-white transition-colors underline decoration-primary decoration-2 underline-offset-4"
+                                                href="mailto:1@dengcj.com">1@dengcj.com</a>
+                                    </div>
+                                    </button>
+                                    <p class="text-center text-[10px] text-slate-500 uppercase tracking-widest">通常会在 12 小时内回复</p>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- Footer -->
+        <footer class="mt-auto border-t border-slate-200 bg-white py-10 px-6 md:px-20">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2 opacity-60">
+                    <div class="text-slate-900 size-5">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 uppercase tracking-widest">&copy; 2026 Deng Chunjie.</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="text-xs font-bold text-slate-400 hover:text-slate-900 transition-colors uppercase tracking-widest"
+                        href="privacy_zh.html">隐私政策</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
