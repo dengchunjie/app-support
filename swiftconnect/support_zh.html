@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4ff00",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#f3f4f6",
+                        "surface": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>支持 | SwiftConnect</title>
+</head>
+
+<body class="bg-[#f3f4f6] font-display text-slate-900 antialiased">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <!-- Top Navigation -->
+        <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white px-6 md:px-20 py-3">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-slate-900 size-8">
+                        <img src="SwiftConnect.png" />
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight">SwiftConnect</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                </div>
+            </div>
+        </header>
+        <main class="max-w-7xl mx-auto w-full px-6 md:px-20 py-10 flex flex-col lg:flex-row gap-12">
+            <!-- Main Content Area -->
+            <article class="flex flex-col gap-12 w-full">
+                <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
+                    <header class="border-b border-slate-100 pb-8 mb-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="p-3 bg-slate-100 rounded-xl text-slate-900">
+                                <span class="material-symbols-outlined text-2xl">support_agent</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h1 class="text-3xl font-black tracking-tight text-slate-900">支持</h1>
+                                </div>
+                                <p class="text-sm text-slate-500 mt-1">帮助您快速上手</p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="space-y-12">
+
+                        <!-- App Overview -->
+                        <section class="scroll-mt-32" id="overview">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                应用简介</h2>
+                            <div class="prose max-w-none text-slate-600 leading-relaxed space-y-4">
+                                <p>
+                                    SwiftConnect 是一款原生 macOS SFTP 与 SSH 客户端，专为开发者、系统管理员以及需要管理远程服务器的用户打造。您可以在同一窗口中并排浏览本地与远程文件，使用密码、私钥或 SSH Agent 连接服务器，打开集成终端，直接编辑远程文本文件，并统一管理文件传输。
+                                </p>
+                                <p>
+                                    服务器配置与凭据均保留在您的 Mac 上，无账户、无云端同步、无追踪。
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Key Features -->
+                        <section class="scroll-mt-32" id="features">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                核心功能</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">view_week</span>
+                                        <p class="font-bold text-sm text-slate-900">双栏文件浏览器</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">本地 Mac 与远程服务器并排显示。支持列表、图标和分栏视图，可按名称、大小、日期、类型、权限或所有者排序。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">star</span>
+                                        <p class="font-bold text-sm text-slate-900">服务器收藏</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">保存服务器名称、颜色、备注、初始目录和标签，支持分组管理，并从最近连接中快速进入。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">key</span>
+                                        <p class="font-bold text-sm text-slate-900">多种认证方式</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">支持密码、私钥（可带口令）或 SSH Agent 登录。凭据保存在 macOS 钥匙串中。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">terminal</span>
+                                        <p class="font-bold text-sm text-slate-900">集成 SSH 终端</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">在同一窗口中打开终端会话，无需切换应用即可执行命令。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">edit_document</span>
+                                        <p class="font-bold text-sm text-slate-900">远程文件编辑</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">直接在服务器上打开文本文件，以内置编辑器修改并通过 SFTP 保存。应用会检查编码和二进制内容，避免文件损坏。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">swap_vert</span>
+                                        <p class="font-bold text-sm text-slate-900">传输队列</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">上传和下载文件或整个文件夹，支持进度显示、暂停、继续、重试和取消。可设置并发传输数量并保留修改时间。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">folder_managed</span>
+                                        <p class="font-bold text-sm text-slate-900">文件管理</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">在服务器上新建文件夹、重命名、删除文件，并修改权限（支持递归 chmod）。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">verified_user</span>
+                                        <p class="font-bold text-sm text-slate-900">主机密钥验证</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">主机密钥记录在本地 known_hosts 文件中；若密钥发生异常变化，连接将被拒绝。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">sync_alt</span>
+                                        <p class="font-bold text-sm text-slate-900">rz / sz 命令传输</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">在集成终端中直接使用经典的 <strong>rz</strong> 和 <strong>sz</strong> 命令收发文件，无需离开当前会话。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">sync</span>
+                                        <p class="font-bold text-sm text-slate-900">本地与远程目录同步切换</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">可选开启双栏同步：在一侧打开文件夹时，另一侧会自动切换到同名目录，保持两边位置一致。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">palette</span>
+                                        <p class="font-bold text-sm text-slate-900">本地文件差异着色</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">本地文件名会根据与远程的对比结果着色，突出显示远程缺失或比服务器更新的文件，便于直观对比两边差异。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white hover:border-primary transition-colors">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-lg text-slate-700">tune</span>
+                                        <p class="font-bold text-sm text-slate-900">服务器默认打开方式</p>
+                                    </div>
+                                    <p class="text-sm text-slate-500">可为服务器设置默认以 SFTP 或终端方式打开：在全局设置中选择默认模式，并可针对单个服务器单独覆盖。</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Getting Started -->
+                        <section class="scroll-mt-32" id="getting-started">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                快速开始</h2>
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">1</span>
+                                    <p class="text-sm text-slate-600">点击侧边栏中的 <strong>+</strong> 添加服务器，填写地址、端口和用户名</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">2</span>
+                                    <p class="text-sm text-slate-600">选择认证方式：密码、私钥或 SSH Agent</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">3</span>
+                                    <p class="text-sm text-slate-600">连接后，右侧显示远程目录，左侧显示本地 Mac 文件</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">4</span>
+                                    <p class="text-sm text-slate-600">在两侧窗格之间拖拽文件，或使用传输按钮上传、下载</p>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="text-sm font-bold text-slate-400 mt-0.5">5</span>
+                                    <p class="text-sm text-slate-600">需要命令时切换到终端标签页；文本文件可直接打开并编辑保存</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- System Requirements -->
+                        <section class="scroll-mt-32" id="requirements">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                系统要求</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-lg text-slate-700">laptop_mac</span>
+                                    <div>
+                                        <p class="font-bold text-sm text-slate-900">macOS</p>
+                                        <p class="text-sm text-slate-500">需要 macOS 14.6 或更高版本。</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-lg text-slate-700">dns</span>
+                                    <div>
+                                        <p class="font-bold text-sm text-slate-900">服务器</p>
+                                        <p class="text-sm text-slate-500">需要一台您有访问权限的 SSH/SFTP 服务器。SSH Agent 认证为可选项。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- FAQ -->
+                        <section class="scroll-mt-32" id="faq">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                常见问题</h2>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">SwiftConnect 支持哪些协议？</p>
+                                    <p class="text-sm text-slate-500">当前版本支持通过 SSH 的 SFTP。协议菜单中还会显示 FTP、FTPS、WebDAV 和 Amazon S3，但这些传输方式尚未提供。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">我的密码和私钥存储在哪里？</p>
+                                    <p class="text-sm text-slate-500">存储在 macOS 钥匙串中，由操作系统保护，绝不会写入服务器列表文件。您可以在设置中关闭密码保存，并通过“清除所有凭据”删除已保存的全部凭据。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">主机密钥验证是如何工作的？</p>
+                                    <p class="text-sm text-slate-500">首次连接服务器时，其主机密钥会记录到本地 known_hosts 文件（与 OpenSSH 的 accept-new 行为一致）。若之后密钥发生变化，SwiftConnect 将拒绝连接。服务器正常更换密钥后，可通过“设置 → 显示 known_hosts”检查或编辑该文件。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">可以编辑服务器上的文件吗？</p>
+                                    <p class="text-sm text-slate-500">可以。文本文件可在内置编辑器中打开，并通过 SFTP 保存回服务器。二进制文件和不支持的文本编码会被阻止，以防文件损坏。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">传输队列有什么作用？</p>
+                                    <p class="text-sm text-slate-500">所有上传和下载都会进入队列，您可以暂停、继续、重试或取消任务。并发传输数量和数据包大小可在设置中调整。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">如何备份我的服务器列表？</p>
+                                    <p class="text-sm text-slate-500">服务器列表是 JSON 文件，位于 ~/Library/Application Support/SwiftConnect/servers.json。凭据单独存储在钥匙串中，迁移到另一台 Mac 后需要重新输入密码和私钥。</p>
+                                </div>
+                                <div class="p-5 rounded-xl border border-slate-200 bg-white">
+                                    <p class="font-bold text-sm text-slate-900 mb-2">连接或传输失败时应该检查什么？</p>
+                                    <p class="text-sm text-slate-500">请确认主机、端口和用户名，并确保服务器接受您选择的认证方式。传输失败时，请检查目标目录的写入权限，并尝试减少并发传输数量。如果主机密钥发生变化，请检查 known_hosts 文件。</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Contact -->
+                        <section class="scroll-mt-32 mb-8" id="contact">
+                            <h2
+                                class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6 border-b border-slate-100 pb-2">
+                                联系我们</h2>
+                            <div class="bg-slate-900 rounded-xl p-8 text-white">
+                                <div class="flex flex-col md:flex-row gap-8 items-center justify-between">
+                                    <div class="space-y-4 max-w-md text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">需要帮助？</h3>
+                                        <p class="text-slate-400 text-sm">如果您有任何问题、反馈或功能建议，请通过邮件联系我。</p>
+                                    </div>
+                                    <div class="flex flex-col gap-3 w-full md:w-auto">
+                                        <button
+                                            class="bg-primary hover:opacity-90 text-black font-bold py-3 px-8 rounded-lg transition-all flex items-center justify-center gap-2">
+                                            <span class="material-symbols-outlined text-[20px]">send</span>
+                                            <a class="text-sm font-bold text-slate-900 hover:text-white transition-colors underline decoration-primary decoration-2 underline-offset-4"
+                                                href="mailto:1@dengcj.com">1@dengcj.com</a>
+                                        </button>
+                                        <p class="text-center text-[10px] text-slate-500 uppercase tracking-widest">通常会在 12 小时内回复</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- Footer -->
+        <footer class="mt-auto border-t border-slate-200 bg-white py-10 px-6 md:px-20">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2 opacity-60">
+                    <div class="text-slate-900 size-5">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 uppercase tracking-widest">&copy; 2026 Deng Chunjie.</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="text-xs font-bold text-slate-400 hover:text-slate-900 transition-colors uppercase tracking-widest"
+                        href="privacy_zh.html">隐私政策</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
